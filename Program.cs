@@ -34,6 +34,7 @@ namespace ZooManagement
 
             Console.WriteLine("\n--- Polymorphism Example ---");
             // 4. Polymorphism
+            Console.WriteLine("\nExample(Method Overriding - Run - time Polymorphism):");
             Shape shape = new Shape();
             Shape circle = new Circle();
             Shape rectangle = new Rectangle();
@@ -41,6 +42,11 @@ namespace ZooManagement
             shape.Draw();
             circle.Draw();
             rectangle.Draw();
+
+            Console.WriteLine("\nExample(Method Overloading - Compile - time Polymorphism):");
+            person.Greet(); // Hello, my name is Ajit
+            person.Greet("Welcome"); // Welcome, my name is Ajit
+            person.Greet(35); // Hello, my name is Ajit and I am 35 years old.
 
             Console.WriteLine("\n=== END OF DEMO ===");
         }
